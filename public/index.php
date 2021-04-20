@@ -20,8 +20,3 @@ $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);
-
-echo "<pre>";
-print_r ($_SERVER['APP_ENV']);
-echo "</pre>";
-
